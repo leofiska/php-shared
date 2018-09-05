@@ -1,0 +1,60 @@
+.dlist {
+  text-align: center;
+  position: relative;
+}
+.dlist > div {
+  text-align: center;
+  margin: 0.3em 0.6em;
+  position: relative;
+}
+.dlist > div > div {
+  display: table-cell;
+  height: 6em;
+  padding: 1em;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid #d5d5d5;
+  position: relative;
+}
+.dlist > div:first-child.new > div {
+  border: 1px dashed #d5d5d5;
+  text-align: center;
+}
+.dlist > div > div:hover {
+  border: 1px solid #b5b5b5;
+  background: #d5d5d5;
+}
+.dlist p {
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dlist .photo {
+  line-height: 120%;
+  width: 5vw;
+}
+@media (max-resolution: 139dpi ) and (max-width: 716px), (min-resolution: 140dpi ) and (max-width: 1150px)  {
+  .dlist {
+    display: table;
+    width: 100%;
+  }
+  .dlist > div {
+    display: table-row;
+  }
+  .dlist > div > div {
+    width: 100%;
+  }
+}
+@media (max-resolution: 139dpi ) and (min-width: 716px), (min-resolution: 140dpi ) and (min-width: 1150px) {
+  .dlist {
+    display: inline-block;
+  }
+  .dlist > div {
+    display: inline-block;
+  }
+  .dlist > div > div {
+    min-width: 15em;
+  }
+}

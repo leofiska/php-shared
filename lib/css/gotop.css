@@ -1,0 +1,38 @@
+div#gotop {
+  position: fixed;
+  cursor: pointer;
+}
+div.gotop_visible {
+  visibility: visible;
+  filter: alpha(opacity=0.4);
+  opacity: 0.4;
+}
+div.gotop_visible:hover {
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+div.gotop_invisible {
+  visibility: hidden;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+@media (max-resolution: 139dpi ) and (max-width: 716px), (min-resolution: 140dpi ) and (max-width: 1150px)  {
+  div#gotop {
+    bottom: 1em;
+    right: 1em;
+  }
+  img.gotop {
+    width: 3em;
+    height: 3em;
+  }
+}
+@media (max-resolution: 139dpi ) and (min-width: 716px), (min-resolution: 140dpi ) and (min-width: 1150px) {
+  div#gotop {
+    bottom: 1em;
+    right: 1em;
+  }
+  img.gotop {
+    width: 5em;
+    height: 5em;
+  }
+}

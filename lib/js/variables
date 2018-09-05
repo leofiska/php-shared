@@ -1,0 +1,15 @@
+var timers = new Array();
+var locks = new Array();
+var keys_pressed = new Array();
+var keys_update = new Array();
+var mouse;
+var _st = window.setTimeout;
+var counters = new Array();
+var request_id = 0;
+var request_keep_id = 0;
+var offsets = new Array();
+var move_el = null;
+var messages = new Array();
+var keep_interval = 10000;
+var panic = false;
+locks['scroll'] = false;

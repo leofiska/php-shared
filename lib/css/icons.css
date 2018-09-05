@@ -1,0 +1,16 @@
+.ic-search::before {
+  font-family: "icons";
+  content: "\e610";
+}
+.ic-user::before {
+  font-family: "icons";
+  content: "\e602";
+}
+.ic-settings::before {
+  font-family: "icons";
+  content: "\e60f";
+}
+.ic-tools::before {
+  font-family: "icons";
+  content: "\e651";
+}

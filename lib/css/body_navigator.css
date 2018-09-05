@@ -1,0 +1,9 @@
+nav#navigator {
+  font-size: 0.8em;
+  padding-left: 1em;
+  text-transform:  lowercase; 
+  height: 1.5em;
+  position: fixed;
+  z-index: 5000;
+  font-weight: bold;
+}

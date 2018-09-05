@@ -1,0 +1,77 @@
+* {
+  font-family: inherit;;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  cursor: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+  background: transparent;
+  border: none;
+  letter-spacing: inherit;
+  transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  -moz-transition: none;
+}
+*:not(textarea):not(input):not(.draggable):not(.clickable) {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+html {
+/*  overflow-y: scroll;*/
+  margin: 0;
+  padding: 0;
+}
+a {
+  cursor: pointer;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+pre {
+  padding: 0;
+  margin: 0;
+}
+.clickable {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+
+}
+@media (max-resolution: 139dpi ) and (max-width: 716px), (min-resolution: 140dpi ) and (max-width: 1150px)  {
+}
+@media (max-resolution: 139dpi ) and (min-width: 716px), (min-resolution: 140dpi ) and (min-width: 1150px) {
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #a5a5a5;
+  font-size: 0.8em;
+  text-transform: lowercase;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #a5a5a5;
+  font-size: 0.8em;
+  text-transform: lowercase;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #a5a5a5;
+  font-size: 0.8em;
+  text-transform: lowercase;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #a5a5a5;
+  font-size: 0.8em;
+  text-transform: lowercase;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #a5a5a5;
+  font-size: 0.8em;
+  text-transform: lowercase;
+}

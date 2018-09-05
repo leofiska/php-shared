@@ -1,0 +1,187 @@
+/*COMPACT MENU*/
+nav.compact_menu {
+  vertical-align: middle;
+  position: relative;
+  overflow: visible;
+  z-index: 8000;
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+nav.compact_menu > span {
+  display: block;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 3000;
+  filter: alpha(opacity=0.6);
+  opacity: 0.6;
+}
+nav.compact_menu > span:not(:nth-of-type(3)) {
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0) 0s, opacity 0.4s ease-in 0s;
+  -webkit-transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0) 0s, opacity 0.4s ease-in 0s;
+  -o-transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0) 0s, opacity 0.4s ease-in 0s;
+  -moz-transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0) 0s, opacity 0.4s ease-in 0s;
+}
+nav.compact_menu > span:nth-of-type(3) {
+  transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.3s;
+  -webkit-transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.3s;
+  -o-transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.3s;
+  -moz-transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.3s;
+}
+nav.compact_menu > input[type="checkbox"]:checked + label + span + span {
+  transition: opacity 0.4s ease-in 0s;
+  -webkit-transition: opacity 0.4s ease-in 0s;
+  -o-transition: opacity 0.4s ease-in 0s;
+  -moz-transition: opacity 0.4s ease-in 0s;
+}
+input#compact_button {
+  position: absolute;
+  z-index: 5000;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+input#compact_button:hover + label + span, input#compact_button:hover + label + span + span, input#compact_button:hover + label + span + span + span  {
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+input#compact_button:checked + label + span {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5);
+}
+input#compact_button:checked + label + span + span {
+  filter: alpha(opacity=0);
+  opacity: 0;
+  transition: opacity 0.2s ease-in 0s;
+  -webkit-transition: opacity 0.2s ease-in 0s;
+  -o-transition: opacity 0.2s ease-in 0s;
+  -moz-transition: opacity 0.2s ease-in 0s;
+}
+input#compact_button:checked + label + span + span + span {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-5);
+}
+/*MENU*/
+input#compact_button + label {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+  z-index: 120000;
+  filter: alpha(opacity=0.6);
+  opacity: 0.6;
+  cursor: pointer;
+}
+input#compact_button:checked + label {
+  display: block;
+}
+nav.compact_menu > div {
+  position: absolute;
+  left: -100vw;
+  width: 90vw;
+  z-index: 150000;
+  text-align: left;
+  animation-name: hidecm;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes showcm {
+  from { left: -100vw; }
+  to { left: -3vw; }
+}
+@keyframes showcm {
+  from { left: -100vw; }
+  to { left: -3vw; }
+}
+@-webkit-keyframes hidecm {
+  from { left: -3vw; }
+  to { left: -100vw; }
+}
+@keyframes hidecm {
+  from { left: -3vw; }
+  to { left: -100vw; }
+}
+input#compact_button:checked + label + span + span + span + div {
+  animation-name: showcm;
+  animation-duration: 0.5s;
+/*  filter: alpha(opacity=1);
+  opacity: 1;*/
+}
+nav.compact_menu > div > div:first-of-type {
+  position: relative;
+}
+nav.compact_menu > div > div:nth-of-type(2) {
+  position: relative;
+  padding: 5px 5px 5px 5px;
+/*  min-width: 10em;*/
+  overflow-y: auto;
+  max-height: 82vh;
+}
+nav.compact_menu > div > div:nth-of-type(2) * {
+  position: relative;
+}
+nav.compact_menu > div > div > div {
+  text-transform: uppercase;
+  filter: alpha(opacity=0.6);
+  opacity: 0.6;
+  transition: opacity 0.4s ease-in 0s;
+  -webkit-transition: opacity 0.4s ease-in 0s;
+  -o-transition: opacity 0.4s ease-in 0s;
+  -moz-transition: opacity 0.4s ease-in 0s;
+}
+nav.compact_menu > div > div > div:not(.nolink) {
+  cursor: pointer;
+}
+nav.compact_menu > div > div > div:not(.nolink):hover {
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+nav.compact_menu > div > div > hr {
+  color: #cdcdcd;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cdcdcd;
+  padding: 0; 
+  background-color: #cdcdcd;
+}
+@media (max-resolution: 139dpi ) and (max-width: 716px), (min-resolution: 140dpi ) and (max-width: 1150px)  {
+  nav.compact_menu > span {
+    width: 30px;
+    height: 4px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    -webkit-transform-origin: 0.5px 2px;
+    transform-origin: 0.5px 2px;
+  }
+
+  input#compact_button {
+    cursor: pointer;
+    width: 40px;
+    height: 35px;
+    top: -5px;
+    left: -5px;
+  }
+}
+@media (max-resolution: 139dpi ) and (min-width: 716px), (min-resolution: 140dpi ) and (min-width: 1150px) {
+  nav.compact_menu > span {
+    width: 90px;
+    height: 12px;
+    margin-bottom: 18px;
+    -webkit-transform-origin: 1.5px 6px;
+    transform-origin: 1.5px 6px;
+  }
+  input#compact_button {
+    cursor: pointer;
+    width: 135px;
+    height:105px;
+    top: 0px;
+    left: -15px;
+  }
+}

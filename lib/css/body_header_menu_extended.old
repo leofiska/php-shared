@@ -1,0 +1,114 @@
+
+/*EXTENDED MENU*/
+nav.extended_menu {
+  vertical-align: middle;
+  position: relative;
+  overflow: visible;
+  z-index: 8000;
+  letter-spacing: 1px;
+  height: inherit;
+}
+nav.extended_menu > div {
+  text-align: right;
+  height: inherit;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 10px;
+  font-size: 1em;
+  position: relative;
+}
+nav.extended_menu > div > div {
+  height: inherit;
+}
+nav.extended_menu > div > div > span:first-child {
+  height: inherit;
+  filter: alpha(opacity=0.6);
+  opacity: 0.6;
+  transition: opacity 0.4s ease-in 0s;
+  -webkit-transition: opacity 0.4s ease-in 0s;
+  -o-transition: opacity 0.4s ease-in 0s;
+  -moz-transition: opacity 0.4s ease-in 0s;
+}
+nav.extended_menu > div > div > span:first-child a {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+}
+nav.extended_menu > div > div > span:first-child a::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+nav.extended_menu > div:hover > div > span:first-child {
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+
+/*SUBMENU*/
+nav.extended_menu > div > div:nth-child(2) {
+  position: absolute;
+  visibility: hidden;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.5s;
+  -webkit-transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.5s;
+  -o-transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.5s;
+  -moz-transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.5s;
+  z-index: 10000;
+  text-align: left;
+}
+nav.extended_menu > div:hover > div:first-child + div, nav.extended_menu > div > div:nth-child(2):hover {
+  visibility: visible;
+  filter: alpha(opacity=1);
+  opacity: 1;
+  transition: opacity 0.4s ease-in 0s;
+  -webkit-transition: opacity 0.4s ease-in 0s;
+  -o-transition: opacity 0.4s ease-in 0s;
+  -moz-transition: opacity 0.4s ease-in 0s;
+}
+nav.extended_menu > div > div:nth-child(2) > div:first-child {
+  position: relative;
+}
+nav.extended_menu > div > div:nth-child(2) > div:nth-child(2) {
+  position: relative;
+  padding: 5px 5px 5px 5px;
+  min-width: 10em;
+}
+nav.extended_menu > div > div:nth-child(2) > div:nth-child(2) > div {
+  cursor: pointer;
+  font-size: 0.6em;
+}
+nav.extended_menu > div > div:nth-child(2) > div:nth-child(2) > div > span:first-child {
+  filter: alpha(opacity=0.6);
+  opacity: 0.6;
+  transition: opacity 0.4s ease-in 0s;
+  -webkit-transition: opacity 0.4s ease-in 0s;
+  -o-transition: opacity 0.4s ease-in 0s;
+  -moz-transition: opacity 0.4s ease-in 0s;
+}
+nav.extended_menu > div > div:nth-child(2) > div:nth-child(2) > div:hover > span:first-child {
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+
+@media only screen and (max-resolution: 139dpi ) and (max-width: 716px)  {
+  nav.extended_menu > div > div > span:first-child img {
+    height: 30px;
+  }
+}
+@media only screen and (max-resolution: 139dpi ) and (min-width: 716px) {
+  nav.extended_menu > div > div > span:first-child img {
+    height: 30px;
+  }
+}
+@media only screen and (min-resolution: 140dpi ) and (max-width: 1150px)  {
+  nav.extended_menu > div > div > span:first-child img {
+    height: 60px;
+  }
+}
+@media only screen and (min-resolution: 140dpi ) and (min-width: 1150px) {
+  nav.extended_menu > div > div > span:first-child img {
+    height: 60px;
+  }
+}

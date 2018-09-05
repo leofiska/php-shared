@@ -1,0 +1,46 @@
+input[type="password"], input[type="text"], input[type="email"], input[type="number"], input[type="date"], input[type="tel"], textarea {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+  cursor: text;
+  border: 1px solid #d5d5d5;
+  transition: border 0.4s ease-in 0s;
+  -webkit-transition: border 0.4s ease-in 0s;
+  -o-transition: border 0.4s ease-in 0s;
+  -moz-transition: border 0.4s ease-in 0s;
+}
+input[type="password"]:not([af]), input[type="text"]:not([af]), input[type="email"]:not([af]), input[type="number"]:not([af]), input[type="date"]:not([af]), input[type="tel"]:not([af]) {
+  padding: 0px 3px;
+}
+input:not(.fts) {
+  max-width: 70vw;
+}
+input.invisible {
+  display: none;
+}
+input.transparent {
+  border: none;
+}
+input[type="password"]:hover:not(.transparent), input[type="text"]:hover:not(.transparent), input[type="email"]:hover:not(.transparent), input[type="number"]:hover:not(.transparent), input[type="date"]:hover:not(.transparent), input[type="tel"]:hover:not(.transparent), textarea:hover:not(.transparent), input[type="password"]:focus:not(.transparent), input[type="text"]:focus:not(.transparent), input[type="email"]:focus:not(.transparent), input[type="number"]:focus:not(.transparent), input[type="date"]:focus:not(.transparent), input[type="tel"]:focus:not(.transparent), textarea:focus:not(.transparent) {
+  border-style: solid;
+  border-width: 1px;
+}
+input[error] {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff0000 !important;
+}
+.message {
+  color: #ff0000;
+  min-height: 2em;
+}
+@media (max-resolution: 139dpi ) and (max-width: 716px), (min-resolution: 140dpi ) and (max-width: 1150px)  {
+  input[type="password"], input[type="text"], input[type="email"], input[type="number"], input[type="date"], input[type="tel"], textarea {
+    line-height: 2em;
+    height: 2em;
+  }
+}
+@media (max-resolution: 139dpi ) and (min-width: 716px), (min-resolution: 140dpi ) and (min-width: 1150px) {
+}

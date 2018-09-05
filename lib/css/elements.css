@@ -1,0 +1,128 @@
+.border {
+  border: 1px solid #d5d5d5;
+}
+.bigicon {
+  margin-right: 0.3em;
+}
+.bigicon {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+}
+.bigicon:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.bp {
+  display: table;
+  text-align: center;
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+.bp-r {
+  display: table-row;
+}
+.bp-c {
+  display: table-cell;
+  opacity: 1;
+  height: 100%;
+  vertical-align: middle;
+}
+.bp-c > span {
+  font-size: 1.2em;
+  color: #f5f5f5;
+  font-weight: bold;
+  vertical-align: middle;
+  padding: 5px 1em;
+}
+div.button {
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 2px;
+  padding: 0px 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+div.disabled_button {
+  display: inline-block;
+  font-weight: normal;
+  margin-left: 2px;
+  padding: 0px 2px;
+  cursor: default;
+  opacity: 0.4;
+  filter: alpha(opacity=0.4);
+  text-transform: uppercase;
+}
+.help {
+  display: inline-block;
+  font-size: 0.8em;
+  text-transform: lowercase;
+  cursor: pointer; 
+  padding: 0 0.1em;
+}
+[help]:hover:after {
+  content: attr(help);
+  background: #ffffff;
+  padding: 5px;
+}
+.vbottom {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 100%;
+}
+.vbottom::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.vmiddle {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+}
+.vmiddle::before, .help::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.op4 {
+
+}
+img.action {
+  margin: 0px 2px;
+}
+@media (max-resolution: 139dpi ) and (max-width: 716px), (min-resolution: 140dpi ) and (max-width: 1150px)  {
+  .bigicon {
+    height: 2em;
+    width: 2em;
+  }
+  img.action {
+    max-height: 1em;
+    width: auto;
+  }
+  .extended {
+    display: none !important;
+  } 
+}
+@media (max-resolution: 139dpi ) and (min-width: 716px), (min-resolution: 140dpi ) and (min-width: 1150px) {
+  .bigicon {
+    height: 3em;
+    width: 3em;
+  }
+  img.action {
+    max-height: 2em;
+    width: auto;
+  }
+  .compact {
+    display: none !important;
+  }
+  .extended {
+    display: block;
+  } 
+}

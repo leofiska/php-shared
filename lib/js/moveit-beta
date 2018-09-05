@@ -1,0 +1,12 @@
+function moveit(timestamp, el, dist, duration){
+    var timestamp = timestamp || new Date().getTime()
+    var runtime = timestamp - starttime
+    var progress = runtime / duration
+    progress = Math.min(progress, 1)
+    el.style.top = (dist * progress).toFixed(2) + 'px'
+    if (runtime < duration){ // if duration not met yet
+        requestAnimationFrame(function(timestamp){ // call requestAnimationFrame again with parameters
+            moveit(timestamp, el, dist, duration)
+        })
+    }
+}

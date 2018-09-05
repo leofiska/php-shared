@@ -1,0 +1,77 @@
+[[-FONT-FACE-]]
+body {
+  [[-DEFAULT-FONT-]]
+  [[-BGCOLOR-]]
+}
+body > header, body > #barbg {
+  [[-BAR-BGCOLOR-]]
+}
+div#cover[cover="1"] ~ #barbg {
+  [[-BAR-BGCCOLOR-]]
+}
+body > footer {
+  [[-BOTTOM-BGCOLOR-]]
+}
+.bp-c > span {
+  [[-BUTTON1-BGCOLOR-]]
+}
+.ic-user::before {
+  [[-IC-USER-BORDER-]]
+}
+nav.compact_menu {
+  [[-COMPACTMENU-COLOR-]]
+}
+nav.compact_menu > div > div:nth-of-type(2) {
+  [[-COMPACTMENU-BGCOLOR-]]
+}
+nav.extended_menu, body > header > div > div > div:last-of-type > div {
+  [[-EXTENDEDMENU-COLOR-]]
+}
+nav.extended_menu > div > div:nth-child(2) > div:nth-child(2) {
+  [[-EXTENDEDMENU-BGCOLOR-]]
+}
+div#cover[cover="1"] ~ header#bar > div.compact nav.compact_menu {
+  [[-COMPACTMENU-CCOLOR-]]
+}
+div#cover[cover="1"] ~ header#bar > div.compact nav.compact_menu > div > div:nth-of-type(2) {
+  [[-COMPACTMENU-BGCCOLOR-]]
+}
+div#cover[cover="1"] ~ header#bar > div.extended nav.extended_menu {
+  [[-EXTENDEDMENU-CCOLOR-]]
+}
+div#cover[cover="1"] ~ header#bar > div.extended nav.extended_menu > div > div:nth-child(2) > div:nth-child(2) {
+  [[-EXTENDEDMENU-BGCCOLOR-]]
+  text-shadow: 0 0 2px #000000;
+  -moz-text-shadow: 0 0 2px #000000;
+  -webkit-text-shadow: 0 0 2px #000000;
+}
+body > .panel_popup {
+  [[-PANEL-POPUP-BORDER-COLOR-]]
+}
+body > .panel_popup > div:last-child {
+  [[-PANEL-POPUP-CLOSE-BGCOLOR-]]
+}
+input[type="password"]:hover:not(.transparent), input[type="text"]:hover:not(.transparent), input[type="email"]:hover:not(.transparent), input[type="number"]:hover:not(.transparent), input[type="date"]:hover:not(.transparent), input[type="tel"]:hover:not(.transparent), textarea:hover:not(.transparent), input[type="password"]:focus:not(.transparent), input[type="text"]:focus:not(.transparent), input[type="email"]:focus:not(.transparent), input[type="number"]:focus:not(.transparent), input[type="date"]:focus:not(.transparent), input[type="tel"]:focus:not(.transparent), textarea:focus:not(.transparent) {
+  [[-INPUT-BORDER-COLOR-]]
+}
+@media (max-resolution: 139dpi ) and (max-width: 716px), (min-resolution: 140dpi ) and (max-width: 1150px)  {
+  div#cover[cover="1"] ~ header#bar {
+    [[-COMPACTMENU-BGCCOLOR-]]
+    [[-COMPACTMENU-CCOLOR-]]
+  }
+  div#cover[cover="1"] ~ nav#navigator {
+    [[-EXTENDEDMENU-CCOLOR-]]
+    text-shadow: 0 0 2px #000000;
+    -moz-text-shadow: 0 0 2px #000000;
+    -webkit-text-shadow: 0 0 2px #000000;
+  }
+}
+@media (max-resolution: 139dpi ) and (min-width: 716px), (min-resolution: 140dpi ) and (min-width: 1150px) {
+  div#cover[cover="1"] ~ header#bar {
+    [[-EXTENDEDMENU-BGCCOLOR-]]
+    [[-EXTENDEDMENU-CCOLOR-]]
+  }
+  div#cover[cover="1"] ~ nav#navigator {
+    [[-EXTENDEDMENU-CCOLOR-]]
+  }
+}

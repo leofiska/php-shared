@@ -1,0 +1,5 @@
+*.swp
+www/config.php
+logs/*
+log/*
+media/*

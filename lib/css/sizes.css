@@ -1,0 +1,61 @@
+.icon {
+  width: 1em;
+  height: 1em;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+}
+.h1em {
+  height: 1em;
+}
+.lh200 {
+  line-height: 200%;
+}
+.mh6em {
+  min-height: 6em;
+}
+.mw2em {
+  min-width: 2em;
+}
+.mw30vw {
+  min-width: 30vw;
+}
+.w3em {
+  width: 3em;
+}
+.w6em {
+  width: 6em;
+}
+.h30vh {
+  height: 30vh;
+}
+.w70vw {
+  width: 70vw;
+}
+.w100 {
+  width: 100%;
+}
+@media (max-resolution: 139dpi ) and (max-width: 716px), (min-resolution: 140dpi ) and (max-width: 1150px)  {
+  .cw30ch {
+    width: 30ch;
+  }
+  .cw40ch {
+    width: 40ch;
+  }
+}
+@media (max-resolution: 139dpi ) and (min-width: 716px), (min-resolution: 140dpi ) and (min-width: 1150px) {
+  .ew30vw {
+    width: 30vw;
+  }
+  .emiw30vw {
+    min-width: 30vw;
+  }
+  .emaw70vw {
+    max-width: 70vw !important;
+  }
+  .emaw50vw {
+    max-width: 50vw;
+  }
+}
+

@@ -1,0 +1,118 @@
+
+/*EXTENDED MENU*/
+nav.extended_menu {
+  vertical-align: middle;
+  position: relative;
+  overflow: visible;
+  z-index: 8000;
+  letter-spacing: 1px;
+}
+nav.extended_menu > div {
+  text-align: right;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+nav.extended_menu > div:not(.mi) {
+  padding: 0 10px;
+  font-size: 1.125em;
+}
+nav.extended_menu > div.mi {
+  padding-right: 10px;
+  font-size: 1.5em;
+}
+nav.extended_menu > div.mi > div:last-child {
+  font-size: 0.75em;
+}
+nav.extended_menu > div > div > span:first-child {
+  text-transform: uppercase;
+  filter: alpha(opacity=0.6);
+  opacity: 0.6;
+  transition: opacity 0.4s ease-in 0s;
+  -webkit-transition: opacity 0.4s ease-in 0s;
+  -o-transition: opacity 0.4s ease-in 0s;
+  -moz-transition: opacity 0.4s ease-in 0s;
+}
+nav.extended_menu > div:hover > div > span:first-child {
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+
+/*SUBMENU*/
+nav.extended_menu > div > div:nth-child(2) {
+  position: absolute;
+  visibility: hidden;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  z-index: 10000;
+  text-align: left;
+  transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.4s;
+  -webkit-transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.4s;
+  -o-transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.4s;
+  -moz-transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.4s;
+}
+nav.extended_menu > div:hover > div:first-child + div, nav.extended_menu > div > div:nth-child(2):hover {
+  visibility: visible;
+  filter: alpha(opacity=1);
+  opacity: 1;
+  transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  -moz-transition: none;
+  transition: opacity 0.4s ease-in 0s;
+  -webkit-transition: opacity 0.4s ease-in 0s;
+  -o-transition: opacity 0.4s ease-in 0s;
+  -moz-transition: opacity 0.4s ease-in 0s;
+}
+nav.extended_menu > div > div:nth-child(2) > div:first-child {
+  position: relative;
+}
+nav.extended_menu > div > div:nth-child(2) > div:nth-child(2) {
+  position: relative;
+  padding: 5px 5px 5px 5px;
+  min-width: 10em;
+}
+nav.extended_menu > div > div:nth-child(2) > div:nth-child(2) > div {
+  cursor: pointer;
+}
+nav.extended_menu > div > div:nth-child(2) > div:nth-child(2) > div > span:first-child {
+  font-variant: small-caps;
+  font-size: 1em;
+  filter: alpha(opacity=0.6);
+  opacity: 0.6;
+  transition: opacity 0.4s ease-in 0s;
+  -webkit-transition: opacity 0.4s ease-in 0s;
+  -o-transition: opacity 0.4s ease-in 0s;
+  -moz-transition: opacity 0.4s ease-in 0s;
+}
+nav.extended_menu > div > div:nth-child(2) > div:nth-child(2) > div > span:first-child > a > div {
+  font-size: 1.5em;
+}
+nav.extended_menu > div > div:nth-child(2) > div:nth-child(2) > div:hover > span {
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+
+
+/*RESPONSIVENESS*/
+@media only screen and (max-resolution: 139dpi ) and (max-width: 716px)  {
+  nav.extended_menu > div > div > span:first-child img {
+    height: 30px;
+  }
+}
+@media only screen and (max-resolution: 139dpi ) and (min-width: 716px) {
+  nav.extended_menu > div > div > span:first-child img {
+    height: 30px;
+  }
+}
+@media only screen and (min-resolution: 140dpi ) and (max-width: 1150px)  {
+  nav.extended_menu > div > div > span:first-child img {
+    height: 60px;
+  }
+}
+@media only screen and (min-resolution: 140dpi ) and (min-width: 1150px) {
+  nav.extended_menu > div > div > span:first-child img {
+    height: 60px;
+  }
+}

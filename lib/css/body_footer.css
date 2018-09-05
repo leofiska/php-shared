@@ -1,0 +1,62 @@
+body > footer {
+  z-index: 5000;
+  margin-top: 50px;
+  min-height: 400px;
+  color: #ffffff;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow-x: hidden;
+}
+body > footer > div.table {
+  transition: padding 0.4s ease-in 0s;
+  -webkit-transition: padding 0.4s ease-in 0s;
+  -o-transition: padding 0.4s ease-in 0s;
+  -moz-transition: padding 0.4s ease-in 0s;
+}
+body > footer img.signature {
+  max-width: 200px;
+}
+@media (max-resolution: 139dpi ) and (max-width: 716px), (min-resolution: 140dpi ) and (max-width: 1150px)  {
+  body > footer > div.table {
+    padding: 4em 3vw;
+  }
+  body > footer > div:not(.table):not(:last-of-type) {
+    padding: 0 15vw;
+  }
+  body > footer > div:last-of-type {
+    padding: 0 0;
+    margin: 0 0;
+  }
+  body > footer > div.table, body > footer > div.table > div.tr, body > footer > div.table > div.tr > div.td {
+    display: block;
+    text-align: center;
+  }
+  body > footer > div.table > div.tr > div.td:not(:last-child) {
+    padding-bottom: 2em;
+  }
+  body > footer > div:not(.table):nth-child(2) {
+    text-align: center;
+  }
+  body > footer input[type="password"],body > footer input[type="text"],body > footer input[type="email"],body > footer input[type="number"],body > footer input[type="date"],body > footer textarea {
+    
+  }
+}
+@media (max-resolution: 139dpi ) and (min-width: 716px), (min-resolution: 140dpi ) and (min-width: 1150px) {
+  body > footer > div.table {
+    padding: 4em 15vw;
+  }
+  body > footer > div:not(.table):not(:last-of-type) {
+    padding: 0 15vw;
+  }
+  body > footer > div:last-of-type {
+    padding: 0 0;
+    margin: 0 0;
+  }
+  body > footer > div:not(.table):nth-child(2) {
+    text-align: right;
+  }
+  body > footer input[type="password"],body > footer input[type="text"],body > footer input[type="email"],body > footer input[type="number"],body > footer input[type="date"],body > footer textarea {
+    
+  }
+}

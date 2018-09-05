@@ -1,0 +1,123 @@
+.bottom {
+  vertical-align: bottom;
+}
+.block {
+  display: block;
+}
+.center {
+  text-align: center;
+}
+.inline {
+  display: inline-block;
+}
+.indent {
+  text-indent: 1em;
+}
+.justify {
+  text-align: justify;
+  text-justify: auto;
+}
+.p1em {
+  padding: 1em;
+}
+.pv02em {
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+}
+.ph02em {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+.ph1em {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.pl1em {
+  padding-left: 1em;
+}
+.pl2px {
+  padding-left: 2px;
+}
+.pr02em {
+  padding-right: 0.2em;
+}
+.pr1em {
+  padding-right: 1em;
+}
+.pr2px {
+  padding-right: 2px;
+}
+.pr5px {
+  padding-right: 5px;
+}
+.pt02em {
+  padding-top: 0.2em;
+}
+.pt1em {
+  padding-top: 1em;
+}
+.pt4em {
+  padding-top: 4em;
+}
+.pt8em {
+  padding-top: 8em;
+}
+.left {
+  text-align: left;
+}
+.m1em {
+  margin: 1em;
+}
+.mb05em {
+  margin-bottom: 0.5em;
+}
+.mb1em {
+  margin-bottom: 1em;
+}
+.mb2em {
+  margin-bottom: 2em;
+}
+.mb3em {
+  margin-bottom: 3em;
+}
+.ml2em {
+  margin-left: 2em;
+}
+.ml4em {
+  margin-left: 4em;
+}
+.middle {
+  vertical-align: middle;
+}
+.mt1em {
+  margin-top: 1em;
+}
+.mt2em {
+  margin-top: 2em;
+}
+.mt4em {
+  margin-top: 4em;
+}
+.mt8em {
+  margin-top: 8em;
+}
+.right {
+  text-align: right;
+}
+.top {
+  vertical-align: top;
+}
+@media (max-resolution: 139dpi ) and (max-width: 716px), (min-resolution: 140dpi ) and (max-width: 1150px)  {
+  .rcenter {
+    text-align: justify;
+    text-justify: auto;
+  }
+  .cindent {
+    text-indent: 1em;
+  }
+}
+@media (max-resolution: 139dpi ) and (min-width: 716px), (min-resolution: 140dpi ) and (min-width: 1150px) {
+  .rcenter {
+    text-align: center;
+  }
+}

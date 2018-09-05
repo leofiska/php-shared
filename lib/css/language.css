@@ -1,0 +1,58 @@
+body > footer > div > div#language {
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 1em;
+}
+body > footer > div > div#language > div > div:first-child {
+  filter: alpha(opacity=0.4);
+  opacity: 0.4;
+}
+body > footer > div > div#language > div:hover > div:first-child {
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+body > footer > div > div#language > div:not(#language_options) {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+body > footer > div > div#language > div > div#language_options {
+  position: absolute;
+  visibility: hidden;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  z-index: 50000;
+  min-width: 15em;
+  bottom: 1.5em;
+  left: -2.5em;
+}
+body > footer > div > div#language > div > div#language_options > div > div {
+  padding: 2px 0px 2px 10px;
+}
+body > footer > div > div#language > div > div#language_options > div > div > div {
+  vertical-align: middle;
+}
+body > footer > div > div#language > div > div#language_options > div > div > div:first-child {
+  padding-right: 3px;
+}
+body > footer > div > div#language > div:hover > div#language_options {
+  visibility: visible;
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+body > footer > div > div#language img {
+  width: 2em;
+  height: 1em;
+}
+body > footer > div > div#language > div > div:first-child, div#language > div:hover > div#language_options {
+  transition: opacity 0.4s ease-in 0s;
+  -webkit-transition: opacity 0.4s ease-in 0s;
+  -o-transition: opacity 0.4s ease-in 0s;
+  -moz-transition: opacity 0.4s ease-in 0s;
+}
+body > footer > div > div#language > div > div#language_options {
+  transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.5s;
+  -webkit-transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.5s;
+  -o-transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.5s;
+  -moz-transition: opacity 0.4s ease-in 0s, visibility 0s ease-in 0.5s;
+}

@@ -1,0 +1,12 @@
+.fixed {
+  table-layout: fixed;
+}
+.table {
+  display: table;
+}
+.tr {
+  display: table-row;
+}
+.td {
+  display: table-cell;
+}

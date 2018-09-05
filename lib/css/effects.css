@@ -1,0 +1,77 @@
+.bgonhover:hover {
+  background: #d5d5d5;
+}
+.colexp {
+  transition: transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0) 0s;
+  -webkit-transition: 0.2s cubic-bezier(0.77,0.2,0.05,1.0) 0s;
+  -o-transition: 0.2s cubic-bezier(0.77,0.2,0.05,1.0) 0s;
+  -moz-transition: 0.2s cubic-bezier(0.77,0.2,0.05,1.0) 0s;
+}
+.glow4, .glow6, div.button {
+  transition: opacity 0.4s ease-in 0s;
+  -webkit-transition: opacity 0.4s ease-in 0s;
+  -o-transition: opacity 0.4s ease-in 0s;
+  -moz-transition: opacity 0.4s ease-in 0s;
+}
+.glow4 {
+  filter: alpha(opacity=0.4);
+  opacity: 0.4;
+}
+.glow6, div.button:hover {
+  filter: alpha(opacity=0.6);
+  opacity: 0.6;
+}
+.glow4:hover, .glow6:hover {
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+.iglow4, .iglow6 {
+  transition: opacity 0.4s ease-in 0s;
+  -webkit-transition: opacity 0.4s ease-in 0s;
+  -o-transition: opacity 0.4s ease-in 0s;
+  -moz-transition: opacity 0.4s ease-in 0s;
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+.iglow4:hover {
+  filter: alpha(opacity=0.4);
+  opacity: 0.4;
+}
+.iglow6:hover {
+  filter: alpha(opacity=0.6);
+  opacity: 0.6;
+}
+.margin-top-effect {
+  transition: margin-top 0.4s ease-in 0s;
+  -webkit-transition: margin-top 0.4s ease-in 0s;
+  -o-transition: margin-top 0.4s ease-in 0s;
+  -moz-transition: margin-top 0.4s ease-in 0s;
+}
+.he {
+  transition: height 0.2s ease-in 0s;
+  -webkit-transition: height 0.2s ease-in 0s;
+  -o-transition: height 0.2s ease-in 0s;
+  -moz-transition: height 0.2s ease-in 0s;
+}
+.op4 {
+  filter: alpha(opacity=0.4);
+  opacity: 0.4;
+}
+.op8 {
+  filter: alpha(opacity=0.8);
+  opacity: 0.8;
+}
+.bw, .abw {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.bw {
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+}
+.bw:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
